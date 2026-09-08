@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Block Wall Repair Phoenix Metro | Fix My Block Fence</title>
-  <meta name="description" content="Cracked, leaning, collapsed, or vehicle-damaged block wall? Phoenix-metro repair and rebuilding by Desert Dreamco LLC, Arizona ROC #334072.">
+  <meta name="description" content="Block wall repair across Phoenix Metro for cracked, leaning, collapsed and impact-damaged walls. Real local projects. Desert Dreamco LLC, ROC #334072.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#111111">
   <link rel="canonical" href="https://fixmyblockfence.com/">
+  <link rel="preconnect" href="https://tally.so" crossorigin>
+  <link rel="preload" as="image" href="collapsed-block-wall-repair-mesa-az-after.webp" type="image/webp">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
@@ -28,10 +30,9 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": "https://fixmyblockfence.com/#business",
+      "@type": "Organization",
+      "@id": "https://fixmyblockfence.com/#organization",
       "name": "Desert Dreamco LLC",
-      "alternateName": "Fix My Block Fence",
       "url": "https://fixmyblockfence.com/",
       "telephone": "+1-623-226-0192",
       "description": "Arizona licensed contractor providing block wall repair, evaluation, partial reconstruction, and rebuilding throughout the Phoenix metro area.",
@@ -39,6 +40,34 @@
         "@type": "PropertyValue",
         "propertyID": "Arizona ROC",
         "value": "334072"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fixmyblockfence.com/#website",
+      "url": "https://fixmyblockfence.com/",
+      "name": "Fix My Block Fence",
+      "publisher": {
+        "@id": "https://fixmyblockfence.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://fixmyblockfence.com/#service",
+      "name": "Fix My Block Fence — Block Wall Repair",
+      "serviceType": [
+        "Block wall repair",
+        "Block fence repair",
+        "Leaning block wall repair",
+        "Cracked block wall repair",
+        "Vehicle-damaged block wall repair",
+        "Pilaster repair",
+        "Partial block wall reconstruction",
+        "Block wall rebuilding"
+      ],
+      "provider": {
+        "@id": "https://fixmyblockfence.com/#organization"
       },
       "areaServed": [
         {
@@ -91,29 +120,7 @@
           "name": "Tempe",
           "addressRegion": "AZ"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://fixmyblockfence.com/#service",
-      "name": "Block Wall Repair",
-      "serviceType": [
-        "Block wall repair",
-        "Block fence repair",
-        "Leaning block wall repair",
-        "Cracked block wall repair",
-        "Vehicle-damaged block wall repair",
-        "Pilaster repair",
-        "Partial block wall reconstruction",
-        "Block wall rebuilding"
       ],
-      "provider": {
-        "@id": "https://fixmyblockfence.com/#business"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Phoenix metropolitan area, Arizona"
-      },
       "url": "https://fixmyblockfence.com/"
     }
   ]
@@ -444,6 +451,75 @@
     }
     .project-cta p{margin:0;color:#dedede}
     .project-cta .btn{flex:0 0 auto}
+
+    .hero-proof{
+      position:relative;border-radius:24px;overflow:hidden;background:#111;
+      box-shadow:0 18px 50px rgba(0,0,0,.14);border:1px solid rgba(0,0,0,.08)
+    }
+    .hero-proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#111}
+    .hero-proof figure{margin:0;position:relative;min-height:380px;background:#ddd}
+    .hero-proof img{width:100%;height:100%;object-fit:cover}
+    .hero-proof .photo-label{left:12px;bottom:12px}
+    .hero-proof-meta{
+      position:absolute;left:16px;right:16px;top:16px;display:flex;
+      justify-content:space-between;align-items:center;gap:10px;z-index:2
+    }
+    .proof-chip{
+      display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border-radius:999px;
+      background:rgba(255,255,255,.94);color:#111;font-size:.76rem;font-weight:900;
+      letter-spacing:.02em;box-shadow:0 5px 18px rgba(0,0,0,.12)
+    }
+    .proofbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+    .proofbar-grid{min-height:86px;display:grid;grid-template-columns:repeat(4,1fr);align-items:stretch}
+    .proofitem{padding:18px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+    .proofitem:last-child{border-right:0}
+    .proofitem strong{font-size:.95rem}
+    .proofitem span{font-size:.82rem;color:#666;margin-top:2px}
+    .microtrust{font-size:.88rem;color:#555;margin-top:13px}
+    .hero .lead{font-size:1.12rem}
+    .hero-qualifier{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+    .hero-qualifier span{
+      padding:7px 10px;border-radius:999px;background:#fff;border:1px solid #d9d9d9;
+      font-size:.82rem;font-weight:750
+    }
+    .form-disclaimer{font-size:.78rem;color:#c6c6c6;line-height:1.45;margin-top:12px}
+    .form-disclaimer a{color:#fff}
+
+    .reviews-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .review-card{
+      border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff;
+      display:flex;flex-direction:column;justify-content:space-between;min-height:220px
+    }
+    .review-badge{
+      display:inline-flex;align-items:center;width:max-content;
+      padding:6px 9px;border-radius:999px;background:#f3f3f0;
+      font-size:.75rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase
+    }
+    .review-quote{font-size:1.08rem;line-height:1.55;margin:18px 0;color:#242424}
+    .review-author{font-weight:900}
+    .review-source{font-size:.82rem;color:#666;margin-top:2px}
+    .reviews-note{font-size:.84rem;color:#666;margin-top:14px}
+    @media (max-width:640px){
+      .reviews-grid{grid-template-columns:1fr}
+      .review-card{min-height:auto}
+    }
+
+    @media (max-width:900px){
+      .proofbar-grid{grid-template-columns:1fr 1fr}
+      .proofitem:nth-child(2){border-right:0}
+      .proofitem:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    }
+    @media (max-width:640px){
+      .hero-proof figure{min-height:265px}
+      .hero-proof-grid{grid-template-columns:1fr 1fr}
+      .hero-proof-meta{top:10px;left:10px;right:10px}
+      .proof-chip{font-size:.68rem;padding:7px 9px}
+      .proofbar-grid{grid-template-columns:1fr 1fr}
+      .proofitem{padding:14px 12px}
+      .proofitem strong{font-size:.85rem}
+      .proofitem span{font-size:.74rem}
+    }
+
     @media (max-width:900px){
       .hero-grid,.split{grid-template-columns:1fr}
       .hero{padding-top:48px}
@@ -473,7 +549,7 @@
 
 <body>
   <div class="topbar">
-    <div class="wrap"><strong>Desert Dreamco LLC</strong> · Arizona Licensed Contractor · ROC #334072 · <a href="tel:+16232260192" style="color:white;text-decoration:none;font-weight:800">623-226-0192</a></div>
+    <div class="wrap"><strong>Desert Dreamco LLC</strong> · Licensed, Bonded & Insured · Arizona ROC #334072 · <a href="tel:+16232260192" style="color:white;text-decoration:none;font-weight:800">623-226-0192</a></div>
   </div>
 
   <header>
@@ -492,34 +568,53 @@
         <div>
           <div class="eyebrow">Phoenix Metro Block Wall Repair</div>
           <h1>Cracked, Leaning, or Damaged Block Wall?</h1>
-          <h2>We repair and rebuild block walls across the Phoenix metro area.</h2>
-          <p class="lead">Cracks, leaning sections, impact damage, loose walls, failed pilasters, and partial collapses — start by sending us a few photos so we can help determine the right next step.</p>
+          <h2>Get the right repair scope — without assuming the whole wall has to come down.</h2>
+          <p class="lead">Desert Dreamco LLC repairs and rebuilds block walls across the Phoenix metro area. Start with photos of the damaged section and we’ll help determine whether the next step is a repair, partial rebuild, or on-site evaluation.</p>
 
           <div class="actions">
-            <a class="btn btn-accent" href="#estimate">Get My Block Wall Estimate</a>
-            <a class="btn btn-outline" href="#estimate">Send Photos of My Wall</a>
-            <a class="btn btn-primary" href="tel:+16232260192">Call 623-226-0192</a>
+            <a class="btn btn-accent js-track" data-event="estimate_click" href="#estimate">Send Photos for an Estimate</a>
+            <a class="btn btn-primary js-track" data-event="call_click" href="tel:+16232260192">Call 623-226-0192</a>
           </div>
 
-          <div class="trust-inline">
-            <span>✓ Desert Dreamco LLC</span>
-            <span>✓ Arizona ROC #334072</span>
-            <span>✓ Phoenix Metro</span>
+          <div class="hero-qualifier">
+            <span>Cracks & leaning</span>
+            <span>Collapsed sections</span>
+            <span>Vehicle damage</span>
+            <span>Pilasters & partial rebuilds</span>
           </div>
+
+          <div class="microtrust"><strong>Desert Dreamco LLC</strong> · Arizona ROC #334072 · Serving Phoenix Metro</div>
         </div>
 
-        <aside class="hero-card">
-          <div class="eyebrow">Start with the problem</div>
-          <h3>What are you seeing?</h3>
-          <p class="note">Photos can help us understand the visible condition and determine whether an on-site evaluation is needed.</p>
-          <ul class="quick-list">
-            <li>Cracked or separating wall</li>
-            <li>Leaning or visibly unstable section</li>
-            <li>Collapsed wall or failed pilaster</li>
-            <li>Vehicle, storm, or root damage</li>
-            <li>Gate-related wall damage</li>
-          </ul>
-        </aside>
+        <div class="hero-proof" aria-label="Real block wall repair project in Mesa, Arizona">
+          <div class="hero-proof-meta">
+            <span class="proof-chip">REAL LOCAL PROJECT</span>
+            <span class="proof-chip">Mesa, AZ</span>
+          </div>
+          <div class="hero-proof-grid">
+            <figure>
+              <img src="collapsed-block-wall-repair-mesa-az-before.webp"
+                   alt="Collapsed block wall section before repair in Mesa, Arizona"
+                   width="1600" height="1200" decoding="async" fetchpriority="high">
+              <span class="photo-label">Before</span>
+            </figure>
+            <figure>
+              <img src="collapsed-block-wall-repair-mesa-az-after.webp"
+                   alt="Rebuilt block wall section after repair in Mesa, Arizona"
+                   width="768" height="512" decoding="async" fetchpriority="high">
+              <span class="photo-label">After</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proofbar" aria-label="Trust and service details">
+      <div class="wrap proofbar-grid">
+        <div class="proofitem"><strong>Licensed, Bonded & Insured</strong><span>Desert Dreamco LLC · Arizona ROC #334072</span></div>
+        <div class="proofitem"><strong>Real Local Repair Work</strong><span>Phoenix · Mesa · Tempe · Glendale</span></div>
+        <div class="proofitem"><strong>Start With Photos</strong><span>Show us the damage from your phone</span></div>
+        <div class="proofitem"><strong>Repair vs. Rebuild</strong><span>Scope based on the actual condition</span></div>
       </div>
     </section>
 
@@ -528,7 +623,7 @@
         <div class="section-head">
           <div class="eyebrow">Common wall problems</div>
           <h2>What’s Wrong With Your Block Wall?</h2>
-          <p>Most block-wall problems fall into a few recognizable categories. The goal is to identify the affected condition and recommend an appropriate scope — not automatically sell a complete replacement.</p>
+          <p>Recognize your problem below, then compare it with real repair projects from around the Phoenix metro area.</p>
         </div>
 
         <div class="problem-grid">
@@ -544,52 +639,6 @@
         </div>
       </div>
     </section>
-
-    <section class="section soft">
-      <div class="wrap split">
-        <div>
-          <div class="eyebrow">Repair vs. rebuild</div>
-          <h2>Not Every Damaged Wall Needs to Be Rebuilt.</h2>
-          <p>We evaluate the affected section and recommend the scope of work that appears appropriate based on the condition of the wall.</p>
-          <ul class="checklist">
-            <li>Localized repair</li>
-            <li>Partial demolition and rebuilding</li>
-            <li>Pilaster repair or reconstruction</li>
-            <li>Footing-related repair</li>
-            <li>Replacement of a damaged wall section</li>
-            <li>Complete rebuilding when the wall is no longer reasonably repairable</li>
-          </ul>
-        </div>
-        <div class="safety">
-          <div class="eyebrow">Safety</div>
-          <h3>Is it cosmetic, or something more?</h3>
-          <p>Not every crack is dangerous. But increasing lean, visible instability, separation, widening cracks, displaced pilasters, footing damage, impact damage, or partial collapse deserve closer evaluation.</p>
-          <p><strong>If a wall appears unstable, avoid putting pressure on it or attempting to test its strength.</strong></p>
-          <p class="note">When conditions warrant it, we may recommend involving a structural engineer.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">Services</div>
-          <h2>Block Wall Problems We Handle</h2>
-        </div>
-        <div class="service-grid">
-          <article class="card"><h3>Leaning Wall Repair</h3><p>Repair or reconstruction of sections that have moved out of alignment.</p></article>
-          <article class="card"><h3>Cracked Wall Repair</h3><p>Repair of damaged block and mortar joints when appropriate, with evaluation of the surrounding condition.</p></article>
-          <article class="card"><h3>Collapsed Wall Rebuild</h3><p>Reconstruction of wall sections that have partially or completely failed.</p></article>
-          <article class="card"><h3>Vehicle Impact Damage</h3><p>Repair or rebuilding of walls damaged by vehicle impact.</p></article>
-          <article class="card"><h3>Pilaster / Column Repair</h3><p>Repair or reconstruction of damaged, displaced, or deteriorated support columns.</p></article>
-          <article class="card"><h3>Partial Reconstruction</h3><p>Rebuilding a damaged section without automatically replacing the entire wall.</p></article>
-          <article class="card"><h3>Gate & Wall Damage</h3><p>Repair of wall sections affected by movement or damage near gates and posts.</p></article>
-          <article class="card"><h3>Block Wall Replacement</h3><p>Full replacement when the existing wall is no longer reasonably repairable.</p></article>
-          <article class="card"><h3>HOA & Commercial Repairs</h3><p>Repair and reconstruction for shared perimeter walls, managed properties, and commercial sites.</p></article>
-        </div>
-      </div>
-    </section>
-
 
     <section class="section soft" id="projects">
       <div class="wrap">
@@ -735,6 +784,121 @@
       </div>
     </section>
 
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Real Customer Feedback</div>
+          <h2>What Customers Say About Desert Dreamco</h2>
+          <p>Short excerpts from publicly indexed Google reviews for Desert Dreamco, selected because they specifically mention block-wall or fence work.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div>
+              <span class="review-badge">Google Review</span>
+              <p class="review-quote">“They built a wall for my property and did an excellent job. Roberto is very respectful, committed, and always kept his word.”</p>
+            </div>
+            <div>
+              <div class="review-author">fer Cota</div>
+              <div class="review-source">Public Google review for Desert Dreamco</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <span class="review-badge">Google Review</span>
+              <p class="review-quote">“We used them to raise our block wall and after a couple hiccups the job was above my expectations.”</p>
+            </div>
+            <div>
+              <div class="review-author">Von Ehmsen</div>
+              <div class="review-source">Public Google review for Desert Dreamco</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <span class="review-badge">Google Review</span>
+              <p class="review-quote">“The company was quick to respond, answered all of my questions, offered a fair quote, and the quality of the finished product was amazing.”</p>
+            </div>
+            <div>
+              <div class="review-author">J Garcia</div>
+              <div class="review-source">Public Google review for Desert Dreamco</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <span class="review-badge">Google Review</span>
+              <p class="review-quote">“Roberto and his team showed up on time and were professional and did a good job on extending our fence by two levels.”</p>
+            </div>
+            <div>
+              <div class="review-author">Graham Bridges</div>
+              <div class="review-source">Public Google review for Desert Dreamco</div>
+            </div>
+          </article>
+        </div>
+
+        <p class="reviews-note">Review excerpts are shown without review-schema markup. Ratings and wording can change on the original review platform.</p>
+
+        <div class="project-cta" style="margin-top:24px">
+          <div>
+            <strong>Ready to start with your wall?</strong>
+            <p>Send photos of the damaged section or call Desert Dreamco directly.</p>
+          </div>
+          <a class="btn btn-accent js-track" data-event="estimate_click" href="#estimate">Send Photos for an Estimate</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section soft">
+      <div class="wrap split">
+        <div>
+          <div class="eyebrow">Repair vs. rebuild</div>
+          <h2>Not Every Damaged Wall Needs to Be Rebuilt.</h2>
+          <p>We evaluate the affected section and recommend the scope of work that appears appropriate based on the condition of the wall.</p>
+          <ul class="checklist">
+            <li>Localized repair</li>
+            <li>Partial demolition and rebuilding</li>
+            <li>Pilaster repair or reconstruction</li>
+            <li>Footing-related repair</li>
+            <li>Replacement of a damaged wall section</li>
+            <li>Complete rebuilding when the wall is no longer reasonably repairable</li>
+          </ul>
+        </div>
+        <div class="safety">
+          <div class="eyebrow">Safety</div>
+          <h3>Is it cosmetic, or something more?</h3>
+          <p>Not every crack is dangerous. But increasing lean, visible instability, separation, widening cracks, displaced pilasters, footing damage, impact damage, or partial collapse deserve closer evaluation.</p>
+          <p><strong>If a wall appears unstable, avoid putting pressure on it or attempting to test its strength.</strong></p>
+          <p class="note">When conditions warrant it, we may recommend involving a structural engineer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Services</div>
+          <h2>Block Wall Problems We Handle</h2>
+        </div>
+        <div class="service-grid">
+          <article class="card"><h3>Leaning Wall Repair</h3><p>Repair or reconstruction of sections that have moved out of alignment.</p></article>
+          <article class="card"><h3>Cracked Wall Repair</h3><p>Repair of damaged block and mortar joints when appropriate, with evaluation of the surrounding condition.</p></article>
+          <article class="card"><h3>Collapsed Wall Rebuild</h3><p>Reconstruction of wall sections that have partially or completely failed.</p></article>
+          <article class="card"><h3>Vehicle Impact Damage</h3><p>Repair or rebuilding of walls damaged by vehicle impact.</p></article>
+          <article class="card"><h3>Pilaster / Column Repair</h3><p>Repair or reconstruction of damaged, displaced, or deteriorated support columns.</p></article>
+          <article class="card"><h3>Partial Reconstruction</h3><p>Rebuilding a damaged section without automatically replacing the entire wall.</p></article>
+          
+          
+          
+        </div>
+      </div>
+    </section>
+
+
+
     <section class="section soft">
       <div class="wrap split">
         <div>
@@ -753,7 +917,31 @@
       </div>
     </section>
 
-    <section class="section">
+    
+    <section class="section" id="about">
+      <div class="wrap split">
+        <div>
+          <div class="eyebrow">About Us</div>
+          <h2>Block Wall Repair Backed by a Licensed Arizona Contractor.</h2>
+          <p>Fix My Block Fence is a specialized block-wall repair service of <strong>Desert Dreamco LLC</strong>. The purpose of this site is simple: give Phoenix-metro property owners a direct way to get help when a block wall is cracked, leaning, damaged, partially collapsed, or needs reconstruction.</p>
+          <p>Rather than treating block-wall repair as just another item in a long list of services, Fix My Block Fence focuses the customer experience around one problem: understanding what is wrong with the wall and determining the appropriate repair or rebuilding scope.</p>
+          <p>Desert Dreamco LLC performs the work as the licensed contractor and is <strong>licensed, bonded, and insured</strong> in Arizona.</p>
+        </div>
+        <div class="card">
+          <div class="eyebrow">Contractor Information</div>
+          <h3>Desert Dreamco LLC</h3>
+          <p><strong>Arizona ROC #334072</strong></p>
+          <p>Licensed, bonded, and insured.</p>
+          <p>Serving homeowners, rental-property owners, HOAs, property managers, multifamily properties, and commercial clients throughout the Phoenix metro area.</p>
+          <div class="actions" style="margin-bottom:0">
+            <a class="btn btn-primary js-track" data-event="call_click" href="tel:+16232260192">Call 623-226-0192</a>
+            <a class="btn btn-outline js-track" data-event="estimate_click" href="#estimate">Send Photos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
       <div class="wrap">
         <div class="section-head">
           <div class="eyebrow">Who we help</div>
@@ -810,6 +998,14 @@
           <h2>Something Wrong With Your Block Wall?</h2>
           <p class="sub">Send us photos and a few details. We’ll review the information and contact you regarding the appropriate next step.</p><p style="margin:14px 0 0"><a href="tel:+16232260192" style="color:#fff;font-weight:900;text-decoration:none">Prefer to call? 623-226-0192</a></p>
 
+          
+          <div class="card" style="margin:22px 0;background:#181818;border-color:#333;color:#fff">
+            <div class="eyebrow" style="color:#d4d4d4">Your Information</div>
+            <h3 style="margin:.3rem 0 .5rem">Your photos and contact details are used to review your repair request.</h3>
+            <p style="margin:0;color:#d0d0d0">The form asks only for information needed to understand the wall condition, contact you, and determine the appropriate next step. Please avoid uploading unrelated documents or images containing unnecessary sensitive information.</p>
+            <p style="margin:10px 0 0"><a href="privacy.html" style="color:#fff;font-weight:800">Read the Privacy Policy →</a></p>
+          </div>
+
           <div class="tally-wrap">
             <iframe
               data-tally-src="https://tally.so/embed/0Q9lM0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
@@ -826,6 +1022,7 @@
           <p style="margin:18px 0 0;color:#bdbdbd;font-size:.86rem">
             Photos are an initial evaluation tool and are not a substitute for an engineering inspection when one is required.
           </p>
+          <p class="form-disclaimer">By submitting the form, you authorize Desert Dreamco LLC to contact you about this repair request. See our <a href="privacy.html">Privacy Policy</a>.</p>
         </div>
       </div>
     </section>
@@ -833,9 +1030,9 @@
 
   <footer>
     <div class="wrap">
-      <p><strong>Desert Dreamco LLC</strong><br>Arizona Licensed Contractor · ROC #334072<br><a href="tel:+16232260192">623-226-0192</a></p>
+      <p><strong>Desert Dreamco LLC</strong><br>Licensed, Bonded & Insured · Arizona ROC #334072<br><a href="tel:+16232260192">623-226-0192</a></p>
       <p>FixMyBlockFence.com connects Phoenix-metro property owners with Desert Dreamco LLC for block-wall repair, evaluation, partial reconstruction, and rebuilding services.</p>
-      <p>© 2026 Desert Dreamco LLC. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p><p>© 2026 Desert Dreamco LLC. All rights reserved.</p>
     </div>
   </footer>
 
@@ -854,5 +1051,19 @@
       var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s);
     }
   </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.addEventListener("click", function(e){
+      var el = e.target.closest(".js-track");
+      if(!el) return;
+      window.dataLayer.push({
+        event: el.dataset.event || "cta_click",
+        link_text: (el.textContent || "").trim(),
+        link_url: el.getAttribute("href") || ""
+      });
+    });
+  </script>
+
 </body>
 </html>
