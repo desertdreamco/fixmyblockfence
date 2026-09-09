@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLQ62C1NW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FLQ62C1NW3');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Block Wall Repair Phoenix Metro | Fix My Block Fence</title>
@@ -1065,5 +1073,59 @@
     });
   </script>
 
+  <script>
+    // Conversion-oriented GA4 events. No form answers or PII are sent to Google.
+    document.addEventListener("click", function(e){
+      var el = e.target.closest("a");
+      if (!el || typeof gtag !== "function") return;
+
+      var href = el.getAttribute("href") || "";
+      var text = (el.textContent || "").trim();
+
+      if (href.indexOf("tel:") === 0) {
+        gtag("event", "call_click", {
+          link_text: text,
+          link_url: href
+        });
+      } else if (href === "#estimate") {
+        gtag("event", "estimate_click", {
+          link_text: text
+        });
+      }
+    });
+
+    // Tally embeds emit lifecycle events to the parent page via postMessage.
+    window.addEventListener("message", function(e){
+      if (e.origin !== "https://tally.so" || typeof e.data !== "string") return;
+      if (e.data.indexOf("Tally.") === -1) return;
+
+      var message;
+      try {
+        message = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+
+      var eventName = message.event || message.type || "";
+      var payload = message.payload || {};
+
+      if (eventName === "Tally.FormLoaded") {
+        gtag("event", "tally_form_loaded");
+      }
+
+      if (eventName === "Tally.FormPageView") {
+        gtag("event", "tally_form_page_view", {
+          form_page: payload.page || null
+        });
+      }
+
+      if (eventName === "Tally.FormSubmitted") {
+        gtag("event", "generate_lead", {
+          lead_source: "tally_form",
+          form_name: payload.formName || "Fix My Block Fence Estimate"
+        });
+      }
+    });
+  </script>
 </body>
 </html>
