@@ -1,0 +1,14 @@
+FixMyBlockFence photo + local SEO update
+
+Changes:
+- Added authentic local-work sections to Peoria, Cave Creek, Carefree, Avondale, Goodyear, Chandler and Surprise service-area pages.
+- Added one additional neighborhood/local snapshot to Glendale (Arrowhead), Mesa (Superstition Springs) and Tempe (North Tempe), while preserving their stronger existing before/after case studies.
+- Added real visual evidence to Leaning and Cracked service pages from Cave Creek and Goodyear.
+- Surfaced existing exact-match before/after project images on Collapsed, Vehicle Damage and Pilaster service pages.
+- Added real visual examples to the Leaning Warning Signs and Crack Patterns guides.
+- Added an honest Additional Recent Local Work section to /projects/ without creating thin new project URLs. Includes Peoria/Vistancia, Cave Creek, Avondale/Rancho Santa Fe, Chandler/Chandler Springs, Surprise and Sun City.
+- Optimized selected uploads to WebP, max 1280px, quality 80, metadata stripped.
+- Added width/height, lazy loading and async decoding to all new images; added dimensions to existing project-hub thumbnails.
+- Updated city meta descriptions and OG images where authentic local project evidence was added.
+- Did NOT add new city pages, project URLs, fake before/after pairs, geotags, generic neighborhood lists, or unsupported diagnoses.
+- Sitemap remains unchanged at 47 URLs.
