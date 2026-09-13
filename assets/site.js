@@ -15,12 +15,52 @@ document.addEventListener('DOMContentLoaded', function () {
     link.setAttribute('href', '/');
   });
 
+  if (!document.querySelector('link[rel="icon"]')) {
+    var favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.sizes = '96x96';
+    favicon.href = '/favicon.png';
+    document.head.appendChild(favicon);
+  }
+
   document.querySelectorAll('script[type="application/ld+json"]').forEach(function (node) {
-    var markup = node.textContent;
-    if (markup.indexOf('LocalBusiness') !== -1) {
-      markup = markup.split('LocalBusiness').join('Organization');
-      markup = markup.split('#business').join('#organization');
-      node.textContent = markup;
+    try {
+      var data = JSON.parse(node.textContent);
+      var logoUrl = 'https://desertdreamco.com/images/logo.webp';
+
+      function normalize(value) {
+        if (Array.isArray(value)) {
+          value.forEach(normalize);
+          return;
+        }
+        if (!value || typeof value !== 'object') return;
+
+        if (value['@type'] === 'LocalBusiness') {
+          value['@type'] = 'Organization';
+        }
+
+        if (value['@id'] === 'https://fixmyblockfence.com/#business') {
+          value['@id'] = 'https://fixmyblockfence.com/#organization';
+        }
+
+        Object.keys(value).forEach(function (key) {
+          if (typeof value[key] === 'string' && value[key] === 'https://fixmyblockfence.com/#business') {
+            value[key] = 'https://fixmyblockfence.com/#organization';
+          } else {
+            normalize(value[key]);
+          }
+        });
+
+        if (value['@type'] === 'Organization' && !value.logo) {
+          value.logo = logoUrl;
+        }
+      }
+
+      normalize(data);
+      node.textContent = JSON.stringify(data);
+    } catch (error) {
+      // Leave malformed JSON-LD untouched rather than breaking the page.
     }
   });
 });
