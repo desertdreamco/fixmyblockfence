@@ -11,8 +11,39 @@ document.addEventListener('click', function (event) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Keep every header-logo link pointed at the canonical homepage URL.
   document.querySelectorAll('a.brand').forEach(function (link) {
     link.setAttribute('href', '/');
+  });
+
+  // Remove a service page from its own "Related repair services" module.
+  var normalizePath = function (pathname) {
+    var path = pathname || '/';
+    path = path.replace(/\/index\.html$/i, '/');
+    if (path.charAt(path.length - 1) !== '/' && path.indexOf('.') === -1) path += '/';
+    return path;
+  };
+  var currentPath = normalizePath(window.location.pathname);
+
+  document.querySelectorAll('section.section').forEach(function (section) {
+    var eyebrow = section.querySelector('.eyebrow');
+    if (!eyebrow || eyebrow.textContent.trim().toLowerCase() !== 'related repair services') return;
+
+    section.querySelectorAll('article.card').forEach(function (card) {
+      var link = card.querySelector('a[href]');
+      if (!link) return;
+      try {
+        var targetPath = normalizePath(new URL(link.getAttribute('href'), window.location.href).pathname);
+        if (targetPath === currentPath) card.remove();
+      } catch (error) {
+        // Leave an unparseable link untouched.
+      }
+    });
+  });
+
+  // Correct template-generated lowercase city-name headings.
+  document.querySelectorAll('h1, h2, h3').forEach(function (heading) {
+    heading.innerHTML = heading.innerHTML.replace(/\bphoenix\b/g, 'Phoenix');
   });
 
   if (!document.querySelector('link[rel="icon"]')) {
