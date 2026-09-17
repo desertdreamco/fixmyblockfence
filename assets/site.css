@@ -8,3 +8,15 @@
 .project.photo-natural img{aspect-ratio:auto;object-fit:contain;max-height:720px;background:#f4f4f2}
 .local-context{margin-top:18px;color:#555}.local-context strong{color:#111}
 .local-snapshot{margin-top:22px}
+
+/* About and company proof */
+.about-intro{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:42px;align-items:center}
+.owner-photo{border-radius:22px;width:100%;max-height:680px;object-fit:cover;object-position:center 35%;box-shadow:var(--shadow)}
+.about-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.work-sequence{display:grid;grid-template-columns:.78fr 1.22fr;gap:18px;align-items:stretch}
+.work-sequence figure{margin:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+.work-sequence img{width:100%;height:100%;min-height:430px;object-fit:cover}
+.work-sequence .portrait-stage{object-position:center 38%}
+.work-sequence figcaption{padding:13px 16px;color:#555;background:#fff}
+@media(max-width:900px){.about-intro,.work-sequence{grid-template-columns:1fr}.about-proof{grid-template-columns:1fr 1fr}.owner-photo{max-height:600px}.work-sequence img{min-height:0;max-height:620px}}
+@media(max-width:640px){.about-proof{grid-template-columns:1fr}}
